@@ -1,7 +1,7 @@
 # Enable MIAI VoiceTrigger For MI6x
 ### This is a module for MI 6X to enable VoiceTrigger
 
-#### Based on MIUI version 8.12.3
+#### Based on MIUI version 8.11.29
 
 ##### May not be applicable to other models
 
