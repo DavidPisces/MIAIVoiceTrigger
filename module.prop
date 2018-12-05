@@ -1,0 +1,7 @@
+id=MIAIVoiceTrigger
+name=小爱唤醒
+version=8.12.5
+versionCode=1
+author=@酷安 雄式老方
+description=为小米6x的MIUI10适配小爱语音唤醒
+minMagisk=17000
