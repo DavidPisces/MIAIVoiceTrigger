@@ -103,16 +103,13 @@ set_permissions() {
 # Make update-binary as clean as possible, try to only do function calls in it.
 
 checkisWayne() {
-    local requireDevice="$1"
-    local nowDevice="`grep_prop ro.product.device`"
-    if [ "$(echo -e "$nowDevice\n$requiredDevice" | sort -r | head -n 1)" != "$nowDevice" ]; then
-        ui_print "! It can only be used for MI 6x"
-        ui_print "  Your model: $nowDevice"
-        ui_print "  Required model: $requiredDevice"
-        return 1
-    fi
+if [ "$(grep_prop ro.product.device)" == "$1" ] || [ "$(grep_prop ro.build.product)" == "$1" ]; then
     return 0
+  else
+    return 1
+  fi
 }
+if !checkisWayne "wayne" && !checkisWayne "wayne"; then
+  abort "! It can only be used for MI 6X"
+fi
 
-checkisWayne "wayne" 
-[ $? -ne 0 ] && exit 1
