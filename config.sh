@@ -40,12 +40,14 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*****************************************************"
-  ui_print "           小米6x小爱同学亮屏唤醒    "
-  ui_print "              MADE BY 雄式老方"
+  ui_print "小米6x小爱同学亮屏唤醒"
+  ui_print "Enable MIAI VoiceTrigger For MI6x"
+  ui_print "@酷安 雄式老方"
+  ui_print "Made by 雄式老方"
   ui_print "安装完成后请重启，并到设置-小爱同学-语音唤醒进行设置"
-  ui_print "             未经允许，禁止转载"
-  ui_print "*****************************************************"
+  ui_print "After installed,restart your phone,then input voice in Settings - MI AI - Wake with voice."
+  ui_print "未经允许，禁止转载"
+  ui_print "No reproduction without permission."
 }
 
 ##########################################################################################
