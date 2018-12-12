@@ -100,3 +100,17 @@ set_permissions() {
 # difficult for you to migrate your modules to newer template versions.
 # Make update-binary as clean as possible, try to only do function calls in it.
 
+checkisWayne() {
+    local requireDevice="$1"
+    local nowDevice="`grep_prop ro.product.device`"
+    if [ "$(echo -e "$nowDevice\n$requiredDevice" | sort -r | head -n 1)" != "$nowDevice" ]; then
+        ui_print "! It can only be used for MI 6x"
+        ui_print "  Your model: $nowDevice"
+        ui_print "  Required model: $requiredDevice"
+        return 1
+    fi
+    return 0
+}
+
+checkisWayne "wayne" 
+[ $? -ne 0 ] && exit 1
