@@ -15,4 +15,4 @@
 
 # 更新日志
 · 8.12.12 更改模块名称，增加机型验证
-· 8.12.12 Change the module name,added the devices check
+· 8.12.12 Change the module name,added the devices check.
