@@ -4,3 +4,4 @@ version=8.12.12
 versionCode=1
 author=@酷安 雄式老方
 description=为小米6x适配小爱语音唤醒，使用Magisk Manager刷入后重启，到设置-小爱同学-语音唤醒中录入声音即可使用，重新启用模块后需要重新录入声音
+minMajisk=18000
